@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+
+<div class="header">Weather Dashboard</div>
+
+<div class="container">
+    <div class="sidebar">
+        <label for="city-input">Search for a City:</label>
+        <input type="text" id="city-input" placeholder="San Diego">
+        <button id="search-button">Search</button>
+        <div id="searched-cities">
+            <!-- Previously searched cities will be dynamically inserted here by script.js -->
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="current-weather">
+            <h2 id="current-city-date">City (Date) <span id="current-weather-icon">🌞</span></h2>
+            <p id="current-temp">Temp: --°F</p>
+            <p id="current-wind">Wind: -- MPH</p>
+            <p id="current-humidity">Humidity: --%</p>
+        </div>
+        <h3>5-Day Forecast:</h3>
+        <div class="forecast" id="forecast-container">
+            <!-- Forecast cards will be dynamically inserted here by script.js -->
+        </div>
+    </div>
+</div>
+<script src="./Assets/script.js"></script>
+</body>
+</html>
